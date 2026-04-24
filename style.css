@@ -1,0 +1,62 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {font-family: 'Inter', sans-serif; color: #0A0A0A; line-height: 1.6; background: #fff;}
+.container {max-width: 1100px; margin: 0 auto; padding: 0 20px;}
+h1, h2, h3, h4 {font-family: 'Montserrat', sans-serif; font-weight: 800;}
+h1 {font-size: 48px; line-height: 1.1; margin-bottom: 16px;}
+h2 {font-size: 32px; margin-bottom: 24px;}
+a {text-decoration: none; color: #00A843;}
+.green-line {width: 120px; height: 4px; background: #00E676; margin: 16px auto 24px auto;}
+.center {text-align: center; margin-top: 40px;}
+
+/* Header */
+.site-header {border-bottom: 1px solid #eee; padding: 12px 0; position: sticky; top: 0; background: #fff; z-index: 100;}
+nav {display: flex; justify-content: space-between; align-items: center;}
+.brand-logo {height: 45px; width: auto; display: block;}
+nav ul {display: flex; list-style: none; gap: 32px;}
+nav a {color: #333; font-weight: 500;}
+nav a.active, nav a:hover {color: #00A843;}
+
+/* Hero */
+.hero {padding: 80px 0; text-align: center;}
+.hero-logo {height: 90px; width: auto; margin-bottom: 24px;}
+.hero h2 {font-size: 24px; font-weight: 700; color: #333; margin-bottom: 16px;}
+.hero .sub {font-size: 18px; color: #555; margin-bottom: 40px;}
+.cta {display: flex; gap: 16px; justify-content: center;}
+.btn-primary {background: #00A843; color: #fff; padding: 14px 28px; border-radius: 4px; font-weight: 600;}
+.btn-secondary {border: 2px solid #00A843; color: #00A843; padding: 12px 26px; border-radius: 4px; font-weight: 600;}
+
+/* OEM Pitch */
+.oem-pitch {background: #f8f9fa; padding: 80px 0; text-align: center;}
+.pitch-grid {display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin: 40px 0;}
+.pitch-grid div {background: #fff; padding: 24px; border-radius: 8px; border-top: 4px solid #00E676;}
+
+/* Vehicles */
+.vehicles-preview, .vehicles-full {padding: 80px 0;}
+.vehicles-preview h2 {text-align: center;}
+.vehicle-grid {display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 40px;}
+.car-card {border: 1px solid #eee; border-radius: 8px; padding: 20px; text-align: center;}
+.car-img-placeholder {background: #f8f9fa; height: 160px; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #999; margin-bottom: 16px; font-weight: 600;}
+.car-card h4 {margin: 12px 0 8px 0; font-size: 18px;}
+.car-card p {color: #555; margin-bottom: 16px;}
+.btn-reserve {background: #00A843; color: #fff; padding: 10px 20px; border-radius: 4px; font-weight: 600; display: inline-block;}
+
+/* Page Header */
+.page-header {padding: 60px 0; text-align: center; background: #f8f9fa;}
+
+/* Footer */
+footer {background: #0A0A0A; color: #fff; padding: 40px 0; text-align: center; margin-top: 60px;}
+footer p {margin: 8px 0; color: #ccc;}
+footer strong {color: #fff;}
+
+/* WhatsApp Float */
+.whatsapp-float {position: fixed; bottom: 24px; right: 24px; background: #25D366; color: #fff; padding: 14px 20px; border-radius: 50px; font-weight: 600; box-shadow: 0 4px 12px rgba(0,0,0,0.15); z-index: 100;}
+
+/* Mobile */
+@media (max-width: 768px) {
+  h1 {font-size: 36px;}
+  .brand-logo {height: 38px;}
+  .hero-logo {height: 70px;}
+  .pitch-grid, .vehicle-grid {grid-template-columns: 1fr;}
+  nav ul {gap: 16px; font-size: 14px;}
+  .cta {flex-direction: column;}
+}
